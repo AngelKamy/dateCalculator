@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <title>Date Calculator</title>
+</head>
+
+<body>
+    <!--Título -->
+    <header class="text-center">
+        <h1>Bienvenido al calendario laboral</h1>
+    </header>
+    <div class="container-md my-4 p-4 text-center border border-2  rounded-5">
+
+        <div class="row">
+            <h3>Calculadora laboral</h3>
+            <p>Introduce en los campos la fecha que estás buscando</p>
+        </div>
+
+        <!-- Panel de InputS -->
+        <div class="row mx-5 mb-5 justify-content-center">
+            <div class="col my-1 gap form-control">
+                <label class="mx-auto" for="day">Día</label>
+                <input type="number" id="day" placeholder="1">
+            </div>
+
+            <div class="col my-1 form-control">
+                <label class="mx-auto"for="month">Mes</label>
+                <input  type="text" id="month" placeholder="Enero">
+            </div>
+
+            <div class="col my-1 form-control">
+                <label class="mx-auto" for="year">Año</label>
+                <input type="number" id="year" placeholder="2022">
+            </div>
+        </div>
+        
+        <!-- Botón de cálculo -->
+        <div class="row mx-5 pb-5 mb-5 justify-content-center">
+            <button type="button" class="btn btn-outline-primary btn-lg" onclick="dateCalc()">
+                Calcular
+            </button>
+        </div>
+
+        <!--Panel de output-->
+        <div class="row mx-5 mt-5 justify-content-center">
+            <p class="fs-3 fw-bold"> 
+                ¡Perfecto! Aquí tienes la información de ese día :
+            </p>
+
+            <input type="text " class="form-control justify-content-center " id="mensaje" readonly>
+        </div>
+        <div class="row"></div>
+        <div class="row"></div>
+
+
+    </div>
+
+    <!-- Script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--mi Script -->
+    <script src="./js/myscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.container-md{
+    background-color: #D59F0F ;
+
+}
+
+.form-control{
+    border-radius: 15px;
+    background-color: #002B7A
+}
+label{
+    color: white;
+}
+input{
+
+    background-color:aliceblue
+}
+
+#mensaje{
+    color:aliceblue
+}
